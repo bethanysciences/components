@@ -1,0 +1,69 @@
+
+TODO
+--------
+- igniter disturber tests
+- solenoid circuit
+- run board on battery to test grounding issue
+
+
+
+go Ardu86ino Pro Mini
+-------------------
+
+weirdly, the antenna calibration spits out values btw. 150-186Mhz instead of 500Mhz ... ?? 
+
+COMMAND	output antenna frequencies
+[0] 9	[1] 0	[2] 982	[3] 157120	
+[0] 9	[1] 1	[2] 995	[3] 159200	
+[0] 9	[1] 2	[2] 998	[3] 159680	
+[0] 9	[1] 3	[2] 1018	[3] 162880	
+[0] 9	[1] 4	[2] 1046	[3] 167360	
+[0] 9	[1] 5	[2] 1081	[3] 172960	
+[0] 9	[1] 6	[2] 1070	[3] 171200	
+[0] 9	[1] 7	[2] 1022	[3] 163520	
+[0] 9	[1] 8	[2] 1091	[3] 174560	
+[0] 9	[1] 9	[2] 1062	[3] 169920	
+[0] 9	[1] 10	[2] 1072	[3] 171520	
+[0] 9	[1] 11	[2] 1117	[3] 178720	
+[0] 9	[1] 12	[2] 1168	[3] 186880	
+[0] 9	[1] 13	[2] 768	[3] 122880	
+[0] 9	[1] 14	[2] 1061	[3] 169760	
+[0] 9	[1] 15	[2] 1109	[3] 177440	
+
+
+
+
+
+
+
+
+experience reports by others
+----------------------------
+Sensitivity
+	My experience with the AS3935 so far is that, setting it too sensitive makes it less sensitive to local strikes, and make it less sensitive makes it's less sensitive to remote strikes.
+Grounding
+	- grounding an AS3935 I've found to seriously reduce the number of strikes that
+Measuring antenna frequency with clock
+	"I found that the typical way on the Arduino of timing pulses over a delay cycle isn't accurate enough, and lead to some variance between adjacent cap settings, so I used the oscillator built into the realtime clock as that's very accurate for timing." (more accurate than the cpu oscillator)
+http://www.wxforum.net/index.php?topic=22235.25
+	- 	don't connect with USB to computer!
+	-	The AS3935 doesn't detect when grounded to mains ground.
+	-	When everything is right, it works well at the default settings (indoor / 2/2/2)
+	- 	Battery powered is better.
+	- 	Recalibrate after every AS3935 setting change
+
+
+
+makes me want to build
+------------------------
+-	EMF meter
+-	RF explorer, spectrum analyzer
+
+
+Montreal weather
+-----------------
+http://weather.gc.ca/radar/index_e.html?id=WMN
+http://montreal.weatherstats.ca/
+http://www.windfinder.com/report/st_hubert_montreal
+
+
