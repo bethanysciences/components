@@ -1,9 +1,12 @@
-https://github.com/w4ilun/edison-guides/wiki/Installing-Git-on-Intel-Edison
+# Python
 
+Remove downloaded restrictions  
+```$ sudo spctl --master-disable```  
 
+Privacy and "Anywhere" is now added to the list  
 
-Remove downloaded restrictions 	$ sudo spctl --master-disable			//   Privacy and "Anywhere" is now added to the list
-back to protected mode 			$ sudo spctl --master-enable
+Back to protected mode  
+```$ sudo spctl --master-enable```
 
 
 /Library/Frameworks/Python.framework/Versions/3.6/bin/pip3.6 install thonny
@@ -21,13 +24,13 @@ ActiveTcl executables (wish, tclsh and tkcon) are installed in /usr/local/bin. I
 
     PATH=/usr/local/bin:$PATH
     export PATH
-    
-    
+
+
 
 LiClipse http://www.liclipse.com/
 Requirement: Eclipse 4.6
 
-Note that to be installed, LiClipse requires Eclipse 4.6 (Neon) onwards. 
+Note that to be installed, LiClipse requires Eclipse 4.6 (Neon) onwards.
 
 Requirement: Java 8
 
